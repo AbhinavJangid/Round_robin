@@ -56,6 +56,35 @@ t_time+=quantum;
 
 }
 
+
+if(remaining_time[counted]==0 && flag==1)
+
+{
+
+rem--;
+
+printf("P[%d]\t|\t%d\t|\t%d\n",counted+1,t_time-arrival_time[counted],t_time-arrival_time[counted]-burst_time[counted]);
+
+waiting+=t_time-arrival_time[counted]-burst_time[counted];
+
+turnaround+=t_time-arrival_time[counted];
+
+flag=0;
+
+}
+
+if(counted==number-1)
+
+counted=0;
+
+else if(arrival_time[counted+1]<=t_time)
+
+counted++;
+
+else
+
+counted=0;
+
 }
 
 }
