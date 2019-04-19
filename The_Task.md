@@ -1,4 +1,4 @@
-# Scheduling
+# Round Robin
 
 
 OS scheduler project: This project was to develop a CPU scheduler using below scenarios compute the scheduler performance by providing the waiting time for process, turnaround time for process and average waiting time and turnaround time.
