@@ -29,6 +29,7 @@ remaining_time[counted]=burst_time[counted];
 }
 
 printf("Enter Time Quantum:\t");
+scanf("%d",&quantum);
 
 
 
