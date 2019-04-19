@@ -87,4 +87,11 @@ counted=0;
 
 }
 
+  
+printf("\nAverage Waiting Time= %f\n",waiting*1.0/number);
+
+printf("Avg Turnaround Time = %f",turnaround*1.0/number);
+
+return 0;
+
 }
