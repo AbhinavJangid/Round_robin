@@ -31,6 +31,31 @@ remaining_time[counted]=burst_time[counted];
 printf("Enter Time Quantum:\t");
 scanf("%d",&quantum);
 
+for(t_time=0,counted=0;rem!=0;)
 
+{
+  if(remaining_time[counted]<=quantum && remaining_time[counted]>0)
+
+{
+
+t_time+=remaining_time[counted];
+
+remaining_time[counted]=0;
+
+flag=1;
+
+}
+
+else if(remaining_time[counted]>0)
+
+{
+
+remaining_time[counted]-=quantum;
+
+t_time+=quantum;
+
+}
+
+}
 
 }
